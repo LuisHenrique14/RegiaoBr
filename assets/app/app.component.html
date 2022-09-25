@@ -1,0 +1,168 @@
+<h2>Escolha a Região</h2>
+<div><img src="https://i.pinimg.com/564x/4a/3b/8f/4a3b8f7ba6b7ac47dce338ed1b21f9d5.jpg"></div>
+<button (click)="valorNgSwitch2='Nordeste'">Nordeste</button>
+<button (click)="valorNgSwitch2='Norte'">Norte</button>
+<button (click)="valorNgSwitch2='Centro Oeste'">Centro-Oeste</button>
+<button (click)="valorNgSwitch2='Sudeste'">Sudeste</button>
+<button (click)="valorNgSwitch2='Sul'">Sul</button>
+<h5>Você selecionou: {{valorNgSwitch2}}</h5>
+
+<div [ngSwitch]="valorNgSwitch2">
+    <div *ngSwitchCase="'Sudeste'"><div *ngSwitchCase="'Sudeste'">
+        
+
+<h2>Escolha o Estado</h2>
+<div><img src="https://i.pinimg.com/564x/c7/ee/96/c7ee96a4c83a5aa20a4c1392febbd7e0.jpg" alt="Região Sudeste"></div>
+<button (click)="valorNgSwitch1='Rio de Janeiro'">Rio de Janeiro</button>
+<button (click)="valorNgSwitch1='São Paulo'">São Paulo</button>
+<button (click)="valorNgSwitch1='Minas Gerais'">Minas Gerais</button>
+<button (click)="valorNgSwitch1='Espiríto Santo'">Espiríto Santo</button>
+<h5>Você selecionou: {{valorNgSwitch1}}</h5>
+<div [ngSwitch]="valorNgSwitch1">
+    <div *ngSwitchCase="'Rio de Janeiro'"><div *ngSwitchCase="'Rio de Janeiro'">
+        <h2>Escolha a Cidade</h2>
+        <button (click)="valorNgSwitch='Rio de Janeiro'">Rio de Janeiro</button>
+        <button (click)="valorNgSwitch='São Gonçalo'">São Gonçalo</button>
+        <button (click)="valorNgSwitch='Duque de Caxias'">Duque de Caxias</button>
+        <button (click)="valorNgSwitch='Nova Iguaçu'">Nova Iguaçu</button>
+        <h5>Você selecionou: {{valorNgSwitch}}</h5>
+        
+        <div [ngSwitch]="valorNgSwitch">
+            <div *ngSwitchCase="'Rio de Janeiro'"><p><b>Resumo:</b>O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume. A cidade também é conhecida pelas grandes favelas. O empolgante Carnaval, com carros alegóricos, fantasias extravagantes e sambistas, é considerado o maior do mundo. </p>
+                <li><b>Área:</b> 1.200 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento NE a 5 km/h, umidade de 69%</li>
+                <li><b>População: </b>6,748 milhões (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">Rio de Janeiro</a> </div>
+            <div *ngSwitchCase="'São Gonçalo'"><p><b>Resumo:</b>São Gonçalo é um município brasileiro do estado do Rio de Janeiro, na Região Sudeste do País. Localiza-se no Leste Fluminense, na Região Metropolitana do Rio de Janeiro, estando situado a 25 km da capital fluminense e fazendo limites terrestres com os municípios de Niterói, Maricá e Itaboraí, e limite marítimo, pela Baía de Guanabara, com a capital Rio de Janeiro por meio da Ilha de Paquetá.</p> 
+                <li><b>Área:</b>  249 km²</li>
+                <li><b>Tempo:</b> - </li>
+                <li><b>População: </b>1,092 milhão (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Gon%C3%A7alo_(Rio_de_Janeiro)">São Gonçalo</a> </div>
+            <div *ngSwitchCase="'Duque de Caxias'"><p><b>Resumo:</b> Duque de Caxias é um município brasileiro do estado do Rio de Janeiro, Região Sudeste do país. Localiza-se na Baixada Fluminense, na Região Metropolitana do Rio de Janeiro, estando situado a 16 km da capital estadual.</p> 
+                <li><b>Área:</b> 467.271 km²</li>
+                <li><b>Tempo:</b> 22 °C, vento L a 16 km/h, umidade de 66%</li>
+                <li><b>População: </b>924.624 (2020)</li>  
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Duque_de_Caxias_(Rio_de_Janeiro)">Duque de Caxias</a> </div>
+            <div *ngSwitchCase="'Nova Iguaçu'"><p><b>Resumo:</b> Nova Iguaçu é um município brasileiro do estado do Rio de Janeiro, Região Sudeste do país. Localiza-se na Baixada Fluminense, na Região Metropolitana do Rio de Janeiro, estando situado a 40 km da capital estadual. É a maior cidade da Baixada Fluminense e da Região Metropolitana do Rio de Janeiro em área.</p> 
+                <li><b>Área:</b> 520,8 km²</li>
+                <li><b>Tempo:</b> 23 °C, vento SE a 13 km/h, umidade de 64%</li>
+                <li><b>População: </b> 823.302 (2020)</li> 
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Nova_Igua%C3%A7u">Nova Iguaçu</a> </div>
+            <div *ngSwitchDefault>Default Template</div>
+            </div></div></div>
+    <div *ngSwitchCase="'São Paulo'"><button (click)="valorNgSwitch='São Paulo'">São Paulo</button>
+        <button (click)="valorNgSwitch='Guarulhos'">Guarulhos</button>
+        <button (click)="valorNgSwitch='Campinas'">Campinas</button>
+        <button (click)="valorNgSwitch='São Bernardo do Campo'">São Bernardo do Campo</button>
+        <h5>Você selecionou: {{valorNgSwitch}}</h5>
+        
+        <div [ngSwitch]="valorNgSwitch">
+            <div *ngSwitchCase="'São Paulo'"><p><b>Resumo:</b> São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554.</p>
+                <li><b>Área:</b> 1.521 km²</li>
+                <li><b>Tempo:</b> 14 °C, vento SE a 16 km/h, umidade de 77%</li>
+                <li><b>População: </b>12,33 milhões (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo">São Paulo</a> </div>
+            <div *ngSwitchCase="'Guarulhos'"><p><b>Resumo:</b> Guarulhos é um município da Região Metropolitana de São Paulo, no estado de São Paulo, no Brasil. É a segunda cidade mais populosa do estado, a 13ª mais populosa do Brasil e a 53ª mais populosa do continente americano.</p> 
+                <li><b>Área:</b> 318,675 km²</li>
+                <li><b>Tempo:</b> 13 °C, vento SE a 13 km/h, umidade de 79%</li>
+                <li><b>População: </b>1,40 milhões (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Guarulhos">Guarulhos</a> </div>
+            <div *ngSwitchCase="'Campinas'"><p><b>Resumo:</b> Campinas é uma cidade no sudeste brasileiro, a noroeste de São Paulo. A sua Catedral Metropolitana possui um interior em madeira de jacarandá e um museu de arte sacra. A Torre do Castelo, anteriormente uma torre de água, proporciona vistas panorâmicas. No norte, O Parque Portugal inclui um planetário e elétricos restaurados de inícios do século XX. Na extremidade do parque, o Museu do Café recorda a história da cidade enquanto produtora de café.</p> 
+                <li><b>Área:</b> 795,7 km²</li>
+                <li><b>Tempo:</b> - </li>
+                <li><b>População: </b>1,213 milhões (2020)</li>  
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Campinas">Campinas</a> </div>
+            <div *ngSwitchCase="'São Bernardo do Campo'"><p><b>Resumo:</b> São Bernardo do Campo é um município brasileiro do estado de São Paulo, na Região Imediata de São Paulo.</p> 
+                <li><b>Área:</b> 409,532 km²</li>
+                <li><b>Tempo:</b> 13 °C, vento S a 21 km/h, umidade de 81%</li>
+                <li><b>População: </b> 844.483 (2020)</li> 
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Bernardo_do_Campo">São Bernardo do Campo</a> </div>
+            <div *ngSwitchDefault>Default Template</div>
+            </div></div>
+    <div *ngSwitchCase="'Minas Gerais'"><button (click)="valorNgSwitch='BH'">Belo Horizonte</button>
+        <button (click)="valorNgSwitch='Uberlândia'">Uberlândia</button>
+        <button (click)="valorNgSwitch='Contagem'">Contagem</button>
+        <button (click)="valorNgSwitch='Juiz de Fora'">Juiz de Fora</button>
+        <h5>Você selecionou: {{valorNgSwitch}}</h5>
+        
+        <div [ngSwitch]="valorNgSwitch">
+            <div *ngSwitchCase="'BH'"><p><b>Resumo:</b> Belo Horizonte é a capital do estado de Minas Gerais, no sudeste do Brasil. Rodeada de montanhas, a cidade é conhecida pelo enorme Estádio Mineirão. Construído em 1965, o estádio alberga também o Museu Brasileiro do Futebol. Nas proximidades encontra-se a Lagoa da Pampulha e o Conjunto Arquitetónico da Pampulha, que inclui a Igreja de São Francisco de Assis, cujo teto é ondulado e que foi concebida pelo arquiteto modernista brasileiro Oscar Niemeyer.</p>
+                <li><b>Área:</b> 331,4 km²</li>
+                <li><b>Tempo:</b> 23 °C, vento L a 24 km/h, umidade de 60%</li>
+                <li><b>População: </b>2,722 milhões (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Belo_Horizonte">BH</a> </div>
+            <div *ngSwitchCase="'Uberlândia'"><p><b>Resumo:</b> Uberlândia é um município brasileiro do interior do estado de Minas Gerais, Região Sudeste do país.</p> 
+                <li><b>Área:</b> 4.115 km²</li>
+                <li><b>Tempo:</b> 24 °C, vento S a 14 km/h, umidade de 28%</li>
+                <li><b>População: </b>699.097 (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Uberl%C3%A2ndia">Uberlândia</a> </div>
+            <div *ngSwitchCase="'Contagem'"><p><b>Resumo:</b> Contagem é um município brasileiro do estado de Minas Gerais, Região Sudeste do país. Pertence à Região Metropolitana de Belo Horizonte e é o terceiro município mais populoso do estado, reunindo 673 849 habitantes, segundo estimativa de 2021.</p> 
+                <li><b>Área:</b> 194.746 km²</li>
+                <li><b>Tempo:</b> 22 °C, vento L a 24 km/h, umidade de 57%</li>
+                <li><b>População: </b>668.949 (2020)</li>  
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Contagem">Contagem</a> </div>
+            <div *ngSwitchCase="'Juiz de Fora'"><p><b>Resumo:</b> Juiz de Fora é um município brasileiro no interior do estado de Minas Gerais. Localiza-se na Zona da Mata Mineira, a sudeste da capital do estado, distando desta cerca de 283 km.</p> 
+                <li><b>Área:</b> 1 435,749 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento S a 11 km/h, umidade de 54%</li>
+                <li><b>População: </b>573.285 (2020)</li> 
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Juiz_de_Fora">Juiz de Fora</a> </div>
+            <div *ngSwitchDefault>Default Template</div>
+            </div></div>
+    <div *ngSwitchCase="'Espiríto Santo'"><button (click)="valorNgSwitch='Vitória'">Vitória</button>
+        <button (click)="valorNgSwitch='Vila Velha'">Vila Velha</button>
+        <button (click)="valorNgSwitch='Guarapari'">Guarapari</button>
+        <button (click)="valorNgSwitch='Serra'">Serra</button>
+        <h5>Você selecionou: {{valorNgSwitch}}</h5>
+        
+        <div [ngSwitch]="valorNgSwitch">
+            <div *ngSwitchCase="'Vitória'"><p><b>Resumo:</b> Vitória é a capital do estado de Espírito Santo, no sudeste do Brasil. É conhecida pelas praias arenosas como Camburi e Curva da Jurema. O centro da cidade inclui a Catedral Metropolitana do século XX, com vitrais. Nas proximidades, a degradada Capela de Santa Luzia data do século XVI. Junto ao rio de Santa Maria encontra-se o grande Palácio Anchieta, sede do governo do estado.</p>
+                <li><b>Área:</b> 93,38 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento S a 18 km/h, umidade de 75%</li>
+                <li><b>População: </b>365.855 (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Vit%C3%B3ria_(Esp%C3%ADrito_Santo)">Vitória</a> </div>
+            <div *ngSwitchCase="'Vila Velha'"><p><b>Resumo:</b> Vila Velha é um município brasileiro localizado no litoral do estado do Espírito Santo, na Região Sudeste do país.</p> 
+                <li><b>Área:</b> 210 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento S a 18 km/h, umidade de 74%</li>
+                <li><b>População: </b>501.325 (2020)</li>
+                <p></p> 
+                <a href="https://pt.wikipedia.org/wiki/Vila_Velha">Vila Velha</a> </div>
+            <div *ngSwitchCase="'Guarapari'"><p><b>Resumo:</b> Guarapari é um município brasileiro no litoral do estado do Espírito Santo, Região Sudeste do país. Localiza-se na Região Metropolitana de Vitória e sua população em 2021 era de 128 504 habitantes. A sua distância até Vitória é de 51 quilômetros e até Brasília é de 1 264 km.</p> 
+                <li><b>Área:</b> 589.826 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento S a 11 km/h, umidade de 75%</li>
+                <li><b>População: </b>126.701 (2020)</li>  
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Guarapari">Guarapari</a> </div>
+            <div *ngSwitchCase="'Serra'"><p><b>Resumo:</b> A Serra é um município brasileiro do estado do Espírito Santo. É o mais populoso município do estado, com 536 765 habitantes, conforme estimativa de 2021 do Instituto Brasileiro de Geografia e Estatística. Está localizado na Microrregião de Vitória e na Mesorregião Central Espírito-Santense.</p> 
+                <li><b>Área:</b> 547,6 km²</li>
+                <li><b>Tempo:</b> 21 °C, vento S a 11 km/h, umidade de 75%</li>
+                <li><b>População: </b>527.240 (2020)</li> 
+                <p></p>       
+                <a href="https://pt.wikipedia.org/wiki/Serra_(Esp%C3%ADrito_Santo)">Serra</a> </div>
+            <div *ngSwitchDefault>Default Template</div>
+            </div>
+</div>
+
+
+<!-- 
+<p></p>
+<input type="text" [(ngModel)]="nomeNgSwitch">
+{{nomeNgSwitch}}
+<ul [ngSwitch]="nomeNgSwitch">
+    <li *ngSwitchCase="'LuisHenrique'">Bom dia LuisHenrique</li>
+    <li *ngSwitchCase="'LuisFernando'">Bom dia Luis Fernando</li>
+    <li *ngSwitchCase="'CarlosEduardo'">Bom dia Carlos Eduardo</li>
+    <li *ngSwitchDefault>Digite algo acima</li>
+</ul> -->
