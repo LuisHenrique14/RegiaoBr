@@ -1,25 +1,21 @@
-version: 2.1
-
-jobs:
-  build:
-    docker:
-      - image: 'cimg/python:3.6'
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies and build project
-          command: bucket/build_asset.txt
-      # using the aws-s3 orb's "copy" command.
-      - aws-s3/copy:
-          from: bucket/build_asset.txt
-          to: 's3://my-s3-bucket-name'
-      - sonarcloud/scan
-
+version: '2.1'
 orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.3
-
+  gh: circleci/github-cli@2.0
+  node: circleci/node@4.3
 workflows:
-  main:
+  test-and-deploy:
     jobs:
-      - build:
-          context: SonarCloud
+      - node/test
+      - gh/release:
+          context:
+            - GITHUB_CREDS
+          filters:
+            branches:
+              only:
+                - main
+          notes-file: changelog.md
+          requires:
+            - node/test
+          tag: 1.0.0
+          title: The initial release
+
